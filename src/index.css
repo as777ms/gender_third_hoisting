@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b; /* Yellow on hover */
+}
+
+button:hover {
+  background-color: #3b7a57; /* Slightly darker green on hover */
+}
+
+.emergency-button:hover {
+  background-color: darkred; /* Emergency button hover effect */
+}
+
+
+.emergency-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: red;
+  color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.home, .chat, .resources, .forum, .emergency-contact {
+  padding: 2rem;
+}
+
+.chat-history {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.message {
+  margin-bottom: 1rem;
+}
+
+.message span {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+
+.chat input {
+  width: 80%;
+  padding: 0.5rem;
+}
+
+.chat button {
+  padding: 0.5rem;
+}
+
+.topics ul {
+  list-style: none;
+  padding: 0;
+}
+
+.topics ul li {
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .chat input {
+    width: 100%;
+  }
+
+  .emergency-button {
+    bottom: 10px;
+    right: 10px;
+  }
+}
